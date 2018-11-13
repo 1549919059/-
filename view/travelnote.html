@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自游吧-游记</title>
+    <link rel="stylesheet" href="../css/commen.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/destination.css"/>
+    <link rel="stylesheet" href="../css/travelnote.css"/>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+    <script type="text/javascript">
+        // alert( 64 / Math.tan(20 / 180 * Math.PI));
+        var transform = function (element, value, key)
+        {
+            key = key || "Transform";
+            ["Moz", "O", "Ms", "Webkit", ""].forEach(function (prefix)
+            {
+                element.style[prefix + key] = value;
+            });
+
+            return element;
+        }
+        $(function ()
+        {
+            var deg = -40 , i = 1;
+            $("#container").click(function ()
+            {
+                transform($(this)[0], "rotateY(" + (deg * i++) + "deg)")
+            });
+        });
+    </script>
+</head>
+<body>
+<!--登录和注册-->
+
+<!--导航栏-->
+<nav>
+    <ul>
+        <li class="nav_at"><span>成都</span>&nbsp;<img src="../images/nav_position.png" alt="定位"/></li>
+        <li class="nav_logo"><img src="../images/logo_black.png" alt="自游吧logo"/></li>
+        <li><a href="ZIYOU_COM.html" title="首页">首页</a></li>
+        <li><a href="destination.html" title="目的地">目的地</a></li>
+        <li><a href="#" title="攻略">攻略</a></li>
+        <li><a href="hotel.html" title="酒店">酒店</a></li>
+        <li><a href="travelnote.html" title="自游记" style="color: #006600">游记</a></li>
+        <li><a href="weektravel.html" title="周末游">周末游</a></li>
+        <li class="nav_search"><img src="../images/btn_search.png" alt="点击搜索"/><input type="text" placeholder="搜索目的地"/></li>
+        <li><a href="login.html"  class="nav_login">登录&nbsp;|&nbsp;</a><a href="register.html"  class="nav_login">注册</a></li>
+    </ul>
+</nav>
+
+<!--头部-->
+<header class="destination travelNote">
+    <img src="../images/weektravel.jpg" alt="重庆旅游"/>
+    <!--<video src="./images/index_video.mp4" autoplay loop="loop"><img src="./images/header_lunbo.jpeg" alt="打不开视频文件"/></video>-->
+    <div class="header_title">
+        <div class="hotel_title">
+            <h2 style="color: #fff">路过你的全重庆，不能错过你的美</h2>
+            <p style="width: 500px;margin-top: 30px">电影《从你的全世界路过》自国庆在各大影院火热上映以来，点燃了旅行者心中关于重庆老街深巷、璀璨夜景、古城吊楼的无限期待。想要去山城隐居？先来看看小编盘点的影视取景地吧</p>
+            <br/><br/><a href="#"> By 自游吧</a>&nbsp;&nbsp;<a href="#" style="color: #fff;background-color: #f48605;padding: 2px">查看全文</a>
+        </div>
+    </div>
+    <div class="header_footer">
+        <h1 style="font-size: 20px">去哪儿</h1><br/>
+        <input type="text" placeholder="输入目的地"/><br/><br/>
+        <p><span>&nbsp;&nbsp;<a href="#">北京</a>&nbsp;<a href="#">上海</a>&nbsp;<a href="#">厦门</a>&nbsp;<a href="#">海南</a>&nbsp;<a href="#">青海</a></span></p>
+    </div>
+</header>
+
+<!--内容-->
+<section>
+    <article class="photo">
+        <!--<img src="../images/PKPK.gif" alt="摄影PK大赛" width="100px"/>-->
+        <h1 class="article_title">&nbsp;&nbsp;摄影PK大赛<sup><b  style="color: red">hot</b></sup>&nbsp;&nbsp;&nbsp;
+            <a href="#" style="color: #f48605;font-size: 16px">我要参赛</a></h1>
+        <hr/>
+        <div><img src="../images/photo_people_ad.jpg" alt="" style="width: 290px;height: 400px;float: left;"/></div>
+        <div class="star_bg"><img src="../images/photo_slide_bg.jpg" alt="背景"/></div>
+        <div class="starbg_photo">
+        <div id="stage">
+            <ul id="container">
+                <li class="slide">
+                    <img src="../images/incity (1).jpg"/><span>Top 1&nbsp;</span>
+                </li>
+                <li class="slide">
+                    <img src="../images/incity (2).jpg"/> <span>Top 2&nbsp;</span>
+                </li>
+                <li class="slide">
+                    <img src="../images/incity (3).jpg"/> <span>Top 3&nbsp;</span>
+                </li>
+                <li class="slide">
+                    <img src="../images/hotel2.jpg"/> <span>Top 4&nbsp;</span>
+                </li>
+                <li class="slide">
+                    <img src="../images/5.jpg"/> <span>Top 5&nbsp;</span>
+                </li>
+                <li class="slide">
+                    <img src="../images/6.jpg"/> <span>Top 6&nbsp;</span>
+                </li>
+                <li class="slide">
+                    <img src="../images/7.jpg"/> <span>Top 7&nbsp;</span>
+                </li>
+                <li class="slide">
+                    <img src="../images/4.jpg"/> <span>Top 8&nbsp;</span>
+                </li>
+                <li class="slide">
+                    <img src="../images/5.jpg"/> <span>开启旅程</span>
+                </li>
+            </ul>
+        </div>
+        <div class="slide_txt">
+            光影记下的美好瞬间，我来分享，你来感受...<br/>
+        </div>
+        </div>
+    </article>
+
+    <article class="article1">
+        <h1 align="center"  style="color: #fff;font-size: 26px">PK榜</h1>
+        <hr/>
+    </article>
+</section>
+<section class="section_bottom">
+    <h1 align="center"  class="article_title">精选游记</h1>
+    <hr/>
+    <article class="section1_spot">
+        <span><img src="../images/popularpost_logo.png" alt="热门景点"/>&nbsp;&nbsp;&nbsp;<b style="font-size: 18px">热门活动</b></span>
+        <div class="fire-spot">
+            <ul class="spot">
+                <li>
+                    <div class="spot_img">
+                        <img src="../images/PKPK.gif" alt="苏州万鸟园"/>
+                    </div>
+                    <div class="spot_talk">
+                        <div class="spot_talk1"><span>结伴自驾游</span></div>
+                        <div class="spot_talk2"><span>再次见面，你好</span></div>
+                    </div>
+                    <div class="spot_explain">
+                        <div>
+                            <span>重庆|巴南</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="spot_img">
+                        <img src="../images/PK.gif" alt="苏州万鸟园"/>
+                    </div>
+                    <div class="spot_talk">
+                        <div class="spot_talk1"><span>马上订票去畅游</span></div>
+                        <div class="spot_talk2"><span>再次见面，你好</span></div>
+                    </div>
+                    <div class="spot_explain">
+                        <div>
+                            <span>重庆|巴南</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="article_right" style="margin-top: -60px;padding-bottom: 60px">
+        <article class="travelnote">
+            <div class="travelnote_header">
+                <b style="font-size: 24px;color: #009900">精选游记</b>
+                <span>最新发表</span>
+                    <span class="writenote">
+                        <a href="#">我要上首页</a>
+                        <span>写游记</span>
+                    </span>
+            </div>
+            <ul class="tra_note">
+                <li class="note">
+                    <img src="../images/note1%20(1).jpeg" alt="油菜花"/>
+                    <div class="note1">
+                        <h2>【至美中国】水墨画卷 婺源散记</h2>
+                        <p>春天，是一个让人内心躁动的美丽季节。躁动了自然就应该有所行，但大片大片金黄的油菜花田、古老沧桑的徽派建</p>
+                        <img src="../images/note_like.jpg" alt="游览人数"/>
+                        <div class="noteliu">
+                            <span>by 田埂上的梦</span>
+                            <span>23067/186</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="note">
+                    <img src="../images/note1%20(2).jpeg" alt="油菜花"/>
+                    <div class="note1">
+                        <h2>【至美中国】水墨画卷 婺源散记</h2>
+                        <p>春天，是一个让人内心躁动的美丽季节。躁动了自然就应该有所行，但大片大片金黄的油菜花田、古老沧桑的徽派建</p>
+                        <img src="../images/note_like.jpg" alt="游览人数"/>
+                        <div class="noteliu">
+                            <span>by 田埂上的梦</span>
+                            <span>24367/186</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="note">
+                    <img src="../images/note1%20(3).jpeg" alt="油菜花"/>
+                    <div class="note1">
+                        <h2>【至美中国】水墨画卷 婺源散记</h2>
+                        <p>春天，是一个让人内心躁动的美丽季节。躁动了自然就应该有所行，但大片大片金黄的油菜花田、古老沧桑的徽派建</p>
+                        <img src="../images/note_like.jpg" alt="游览人数"/>
+                        <div class="noteliu">
+                            <span>by 田埂上的梦</span>
+                            <span>23067/186</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </article>
+</section>
+<footer>
+    <div class="footer1"><a href="#">关于自游</a><a href="#">合作伙伴</a><a href="#">免责声明</a><a href="#">友情链接</a><a href="#">联系我们</a><a href="#">自游微博</a></div>
+    <br/>
+    <span>自游吧旅游网</span>
+</footer>
+</body>
+</html>
